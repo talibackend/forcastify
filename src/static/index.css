@@ -1,0 +1,164 @@
+/* Header styles */
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    overflow-x: hidden;
+}
+input, button, textarea{
+    font-family: 'Josefin Sans', sans-serif;
+}
+video{
+    width: 100%;
+}
+.logo{
+    height: 30px;
+    margin-right: 10px;
+}
+.header-container{
+    display: inline-flex;
+    background-color: black;
+    padding: 0.5rem 0rem;
+    width : 100%;
+    color: white;
+}
+.head-logo-container{
+    width: 60%;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+}
+.search-container{
+    margin-top : 25px;
+}
+.search-input-field{
+    padding: 0.5rem;
+    padding-left: 2rem;
+    margin-right: 2px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: solid white 2px;
+}
+.search-btn{
+    padding: 0.5rem;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: solid white 2px;
+    background-color: black;
+    font-weight: bolder;
+    color: white;
+}
+.search-btn:hover{
+    background-color: rgb(95, 78, 78);
+    cursor: pointer;
+}
+/* Loading styles */
+.loading-container{
+    margin-top: 10rem;
+}
+/* Main body styles */
+.main-container{
+    height: 35rem;
+    width: 100%;
+    display: inline-flex;
+    margin-top: 10px;
+}
+.current-container::before{
+    content: '';
+    width : 70%;
+    padding: 0% 0rem;
+    height: 85%;
+    z-index: -1;
+    margin-left: 20px;
+    position: absolute;
+    filter: brightness(0.5);
+    background-color: black;
+}
+.current-data-container{
+    margin: 200px 40px;
+    background-color: black;
+    display: inline-block;
+    padding: 0% 20px;
+    color: white;
+    border-radius: 10px;
+}
+.condition-container{
+    display: inline-block;
+}
+.condition-icon{
+    height: 50px;
+}
+.others-container{
+    position: absolute;
+    right: 2%;
+    width: 25%;
+    margin-top: 10px;
+}
+.each-other-day{
+    display: inline-flex;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px 0%;
+    border-radius: 10px;
+    margin: 2px 0%;
+    cursor: pointer;
+}
+.each-other-day:hover{
+    background-color: rgb(95, 78, 78);
+}
+.each-other-day-active{
+    background-color: rgb(95, 78, 78);
+}
+.other-icon{
+    width: 30%;
+}
+.other-data{
+    width: 60%;
+}
+.other-data-city{
+    margin-top: 2px;
+}
+@media screen and (max-width : 830px) {
+    .head-logo-container{
+        width: 50%;
+    }
+}
+@media screen and (max-width : 700px) {
+    .main-container{
+        display: block;
+    }
+    .current-container::before{
+        width: 100%;
+        margin: 0%;
+        height: 100%;
+    }
+    .others-container{
+        position: relative;
+        width: 100%;
+        margin-top: 0%;
+        height: 90%;
+    }
+    .each-other-day{
+        margin: 2% 15px;
+    }
+}
+@media screen and (max-width : 575px) {
+    .head-logo-container{
+        width: 40%;
+    }
+}
+@media screen and (max-width : 500px) {
+    .header-container{
+        display: block;
+        text-align: center;
+    }
+    .head-logo-container{
+        margin-left: 20px;
+        margin-bottom: 0%;
+        padding: 0%;
+    }
+    .search-container{
+        margin-top: 0%;
+        padding: 0%;
+        width: 100%;
+    }
+}
